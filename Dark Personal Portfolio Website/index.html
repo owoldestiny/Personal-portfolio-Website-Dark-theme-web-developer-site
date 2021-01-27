@@ -7,10 +7,190 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>John Cahn | Web developer</title>
 </head>
-<!-- TYPE YOU HTML HERE -->
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+<body>
+    <header>
+        <menu>
+            <div class="container">
+                <div class="grid">
+                    <div>
+                        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <nav class="menu mobile">
+                        <ul>
+                            <li><a href="#projects">Work</a></li>
+                            <li><span></span></li>
+                            <li><a href="#about">About</a></li>
+                            <li><span></span></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <a href="#" class="btn">Hire Me</a>
+                    </div>
+                    <a class="menuIcon mobile">&#9778;</a>
+                </div>
+            </div>
+        </menu>
+        <!-- ? You guy will notice i used the theme child element and sibling element. 
+        
+        A Child element is an element that is inside another element.
+        A sibling element is an element near each other, on the same level.-->
+
+        <div id="showcase" class="container">
+
+            <!-- * <id>
+            ? The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+
+            * The defference between an id and a class is that:
+            ? A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page. -->
+
+            <div class="grid">
+                <div class="lt">
+                    <h1>I'm John Cahn, a website<span class="lead">&nbsp;developer,&nbsp;</span> and<span class="lead">&nbsp;designer.&nbsp;</span></h1>
+                    <p>I take your ideas, make them fit into a modern design, and convert the finished design into a website that grows your business.</p>
+                    <a href="#" class="btn">Porfolio</a>
+                </div>
+                <div class="rt">
+                    <img src="images/showcase.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <hr>
+    </div>
+    <!-- 
+
+        * <hr>
+
+        ? The <hr> tag defines a thematic break in an HTML page, just like a shift of topic when writing an article. The <hr> element is most often displayed as a horizontal rule that is used to separate content in an HTML page. -->
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="grid container">
+            <div class="bg_text"></div>
+            <img class="img1" src="images/iphone.png" alt="Iphone">
+            <img class="img2" src="images/mac.png" alt="mac">
+            <img class="img3" src="images/imac.png" alt="imac">
+        </div>
+    </section>
+
+    <div class="container">
+        <hr>
+    </div>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <div class="container">
+            <div class="bg_text"></div>
+            <div class="grid">
+                <div class="lt">
+                    <h2>My <br> Biography</h2>
+
+                    <!--? We will use a link for the download button. There seems to be a lot of confusion over when to use buttons and when to use links. Much like tabs versus spaces. The best example to have in mind is that Buttons Do Things, Links Go Places -->
+
+                    <a download href="doc/cv.docx" class="btn"><img src="images/download.png" alt=""> Download CV</a>
+                </div>
+                <div class="rt">
+                    <p>My name is John, I am a freelance website developer from Virginia, USA. I have years of experience creating websites for large and small companies. I have once worked with a company, after a few years of experience, I become a freelancer
+                        so that I will have the time to do other important things in my life.</p>
+
+                    <p>When it comes to designing a website, I am pretty much confident in bringing your ideas to life. I design websites with software like adobe xd, sketch, and Figma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALIZED -->
+    <section id="specialized">
+        <div class="container">
+            <div class="bg_text"></div>
+            <div class="grid">
+                <div class="block lead">
+                    <img src="images/react.svg" alt="">
+                    <h3>React</h3>
+                    <small>Being a javascript lover, I prefer using react for the frontend, which also helps me code faster.</small>
+                </div>
+                <div class="block bdr">
+                    <img src="images/js.svg" alt="">
+                    <h3>JavaScript</h3>
+                    <small>Being a node js lover, I prefer using javascript for the frontend, which also helps me code faster.</small>
+                </div>
+                <div class="block bdr">
+                    <img src="images/wordpress.svg" alt="">
+                    <h3>Wordpress</h3>
+                    <small>Sometimes I use WordPress to build websites that are required by some clients mostly for a blog.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section id="contact">
+        <div class="container">
+            <div class="bg_text"></div>
+            <div class="grid">
+                <div class="lt">
+                    <h2>Hire Me <br> For Your Next Project</h2>
+                    <small>Drop your details here</small>
+                    <br>
+                    <div class="icons">
+                        <a href="#">
+                            <div>
+                                <img src="images/fb.svg" alt="facebook">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/in.svg" alt="twitter">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/ig.svg" alt="github">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="images/tt.svg" alt="linkedin">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="rt bdr">
+                    <h2>Contact Me</h2>
+                    <form>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Owolabi Destiny">
+
+                        <!-- ? The for attribute of <label> must be equal to the id attribute of the related element to bind them together. 
+                            
+                        ? The <label> tag in HTML is used to provide a usability improvement for mouse users, like if a users clicks on the text within the <label> element, it toggles the control. -->
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@gamil.com">
+                        <label for="phone">Phone</label>
+                        <input type="phone" name="phone" id="phone" placeholder="+23408123456">
+                        <label for="message">Comment</label>
+                        <textarea name="message" id="message" placeholder="Comment in details"></textarea>
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="lt">
+                <small>&copy;Copyright 2021, all right reserved</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
